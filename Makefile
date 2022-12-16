@@ -10,7 +10,7 @@ ARCH?=$(shell uname -m)
 
 build/i386.o: src/i386.asm
 	-mkdir build
-	$(NASM) src/i386.asm -o build/i386.o -f elf64
+	$(NASM) src/i386.asm -o build/i386.o -f elf32
 
 build/x86_64.o: src/x86_64.asm
 	-mkdir build
